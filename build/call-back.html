@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+            <div class="header__steps">
+                            <a href="./ringup.html" id="./ringup.html" class="header__item">
+                        <p class="header__text">Дозвонились</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text header__text_active">Перезвон</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Завершение</p>
+                        <div class="arrow-right"></div>
+                </a>
+                    </div>
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="call-back">
+    <h1 class="call-back__title title">Просит перезвонить</h1>
+    <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>    <p class="call-back__speech">
+        <span class="ring-up__client-name">ЮЛИЯ ВЛАДИМИРОВНА</span>, когда Вам удобно перезвонить?
+    </p>
+    <div class="call-back__specify">
+        <div class="date text-up">
+            <input class="date__input input  datepicker" type="text" name="specify-date" id="datepicker">
+            <label class="date__label label" for="datepicker">Дата перезвона:</label>
+            <div class="icon-date">
+    <img src="img/grey-date.jpeg" alt="календарь">
+    <img class=" hidden" src="img/white-date.jpeg" alt="календарь">
+</div>        </div>
+        <div class="time text-up">
+            <select class="time__select input" name="specify-time" id="specify-time">
+                <option value="" selected></option>
+                <option value="с 05:00 до 07:00">с 05:00 до 07:00</option>
+                <option value="с 07:00 до 09:00">с 07:00 до 09:00</option>
+                <option value="с 09:00 до 11:00">с 09:00 до 11:00</option>
+                <option value="с 11:00 до 13:00">с 11:00 до 13:00</option>
+                <option value="с 13:00 до 15:00">с 13:00 до 15:00</option>
+                <option value="с 15:00 до 17:00">с 15:00 до 17:00</option>
+                <option value="с 17:00 до 19:00">с 17:00 до 19:00</option>
+                <option value="с 19:00 до 21:00">с 19:00 до 21:00</option>
+                <option value="с 22:00 до 00:00">с 22:00 до 00:00</option>
+                <option value="с 00:00 до 02:00">с 00:00 до 02:00</option>
+                <option value="с 02:00 до 04:00">с 02:00 до 04:00</option>
+                <option value="с 04:00 до 06:00">с 04:00 до 06:00</option>
+            </select>
+            <label class="time__label label" for="specify-time">Время перезвона:</label>
+            <div class="time__client-time">текущее время кликента — <span class="client-time">14:00</span></div>
+        </div>
+        <div class="specify-number text-up">
+    <select class="specify-number__select input" name="specify-number" id="specify-number">
+        <option value=""></option>
+        <option value="Клиенту на текущий номер">Клиенту на текущий номер</option>
+        <option value="Клиенту на новый номер">Клиенту на новый номер</option>
+        <option value="Третьему лицу">Третьему лицу</option>
+    </select>
+    <label class="specify-number__label label" for="specify-number">Кому перезвонить:</label>
+</div>        <div class="call-back__phone call-back__new-number phone-number text-up hidden">
+            <input class="input phone" type="tel" id="new-number" name="new-number">
+            <label class="label" for="new-number">Выберите номер телефон:</label>
+        </div>
+        <div class="call-back__phone call-back__third-person phone-number text-up hidden">
+            <input class="input phone" type="tel" id="third-person" name="third-person-number">
+            <label class="label" for="third-person">Выберите номер телефон:</label>
+        </div>
+        <div class="call-back__third-person hidden">
+            <div class="full-name">
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="surname" name="full-name">
+        <label class="label" for="surname">Фамилия</label>
+        <div class="cross hidden"></div>
+    </div>
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="name" name="full-name">
+        <label class="label" for="name">Имя</label>
+        <div class="cross hidden"></div>
+    </div>
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="patronymic" name="full-name">
+        <label class="label" for="patronymic">Отчество</label>
+        <div class="cross hidden"></div>
+    </div>
+</div>        </div>
+    </div>
+    <div class="call-back__footer">
+        <a class="button button_color_yellow">Назначить перезвон</a>
+        <a class="button button_color_blue">Перезвонить сейчас</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается. Не интересно</a>
+    </div>
+</div>            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

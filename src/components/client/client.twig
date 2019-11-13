@@ -1,0 +1,19 @@
+<div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <a href="#call-disunite" data-modal-open class="actions__item actions__disunite">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </a>
+            <a class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </a>
+            <a class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </a>
+        </div>
+    </div>
+    {% include '../comment/comment.twig' %}
+    {% include '@components/modal-call-disunite/modal-call-disunite.twig' %}
+</div>

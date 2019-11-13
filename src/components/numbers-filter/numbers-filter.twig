@@ -1,0 +1,21 @@
+<div class="numbers-filter">
+    <div class="numbers-filter__number text-up cross">
+        <input class="numbers-filter__input" onkeydown="return event.keyCode !== 69" type="number" id="numbers-filter">
+        <label class="numbers-filter__label number-label" for="numbers-filter">Поиск по цифрам:</label>
+        <div class="block-region__loupe">&#128269;</div>
+        <div class="cross__item hidden"></div>
+    </div>
+    <div class="numbers-filter__price text-up cross">
+        <select class="numbers-filter__select" id="price-filer">
+            <option value="" selected></option>
+            <option value="Бесплатно">Бесплатно</option>
+            <option value="490₽">490₽</option>
+            <option value="990₽">990₽</option>
+        </select>
+        <label class="numbers-filter__label price-label" for="price-filer">Стоимость:</label>
+        <div class="numbers-filter__arrow">
+            <div class="arrow-down arrow-down_color_grey"></div>
+        </div>
+        <div class="cross__item hidden"></div>
+    </div>
+</div>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+            <div class="header__steps">
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Дозвонились</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Продажа</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="./page-number.html" id="./page-number.html" class="header__item">
+                        <p class="header__text">Номер</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text header__text_active">ФИО</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Встреча</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Друзья</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Завершение</p>
+                        <div class="arrow-right"></div>
+                </a>
+                    </div>
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="page-name">
+    <h1 class="title">Паспортные данные</h1>
+    <div class="page-name__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech"><span class="client-name">Игорь Михайлович</span>, продиктуйте, пожалуйста, ваши фамилию, имя и отчество полностью, как указано в паспорте</p>
+        <div class="full-name">
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="surname" name="full-name">
+        <label class="label" for="surname">Фамилия</label>
+        <div class="cross hidden"></div>
+    </div>
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="name" name="full-name">
+        <label class="label" for="name">Имя</label>
+        <div class="cross hidden"></div>
+    </div>
+    <div class="full-name__item text-up">
+        <input class="input translate name" type="text" id="patronymic" name="full-name">
+        <label class="label" for="patronymic">Отчество</label>
+        <div class="cross hidden"></div>
+    </div>
+</div>    </div>
+    <div class="page-name__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech">Назовите дату вашего рождения</p>
+        <div class="birthday text-up">
+    <input class="birthday__input input datepicker" type="number" id="birthday">
+    <label class="label" for="birthday">Дата рождения:</label>
+    <div class="icon-date">
+    <img src="img/grey-date.jpeg" alt="календарь">
+    <img class=" hidden" src="img/white-date.jpeg" alt="календарь">
+</div></div>    </div>
+    <div class="page-name__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech">Скажите, вы гражданин РФ?</p>
+        <div class="page-name__nationality">
+            <div class="radio-wrap page-name__rus">
+                <input class="radio" type="radio" id="nationality-yes" name="nationality">
+                <label class="radio-label" for="nationality-yes">Гражданин РФ</label>
+            </div>
+            <div class="radio-wrap page-name__foreign">
+                <input class="radio" type="radio" id="nationality-no" name="nationality">
+                <label class="radio-label" for="nationality-no">Гражданин другой страны</label>
+            </div>
+        </div>
+    </div>
+    <div class="country hidden">
+    <div class="country__content text-up">
+        <input class="input translate" type="text" id="country" name="country">
+        <label class="label" for="country">Укажите страну</label>
+    </div>
+</div>    <div class="page-name__buttons">
+        <a href="./page-meet.html" class="button button_color_yellow">Оформить заявку</a>
+        <a href="./call-back.html" class="button button_color_blue">Просит перезвонить</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается</a>
+    </div>
+</div>            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

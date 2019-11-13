@@ -1,0 +1,20 @@
+.app {
+    margin: 50px 100px;
+    &__wrapper {
+        display: flex;
+    }
+    &__sidebar {
+        width: 300px;
+        flex-shrink: 0;
+        margin-left: 50px;
+    }
+    &__content {
+        width: 100%;
+        padding-left: 70px;
+    }
+}
+
+body.vanilla-modal .modal-hider {
+    position: absolute;
+    left: -99999em;
+}

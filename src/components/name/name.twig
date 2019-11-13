@@ -1,0 +1,33 @@
+<div class="page-name">
+    <h1 class="title">Паспортные данные</h1>
+    <div class="page-name__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech"><span class="client-name">Игорь Михайлович</span>, продиктуйте, пожалуйста, ваши фамилию, имя и отчество полностью, как указано в паспорте</p>
+        {% include '@elements/full-name/full-name.twig' %}
+    </div>
+    <div class="page-name__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Назовите дату вашего рождения</p>
+        {% include '@elements/birthday/birthday.twig' %}
+    </div>
+    <div class="page-name__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Скажите, вы гражданин РФ?</p>
+        <div class="page-name__nationality">
+            <div class="radio-wrap page-name__rus">
+                <input class="radio" type="radio" id="nationality-yes" name="nationality">
+                <label class="radio-label" for="nationality-yes">Гражданин РФ</label>
+            </div>
+            <div class="radio-wrap page-name__foreign">
+                <input class="radio" type="radio" id="nationality-no" name="nationality">
+                <label class="radio-label" for="nationality-no">Гражданин другой страны</label>
+            </div>
+        </div>
+    </div>
+    {% include '@elements/country/country.twig' %}
+    <div class="page-name__buttons">
+        <a href="./page-meet.html" class="button button_color_yellow">Оформить заявку</a>
+        <a href="./call-back.html" class="button button_color_blue">Просит перезвонить</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается</a>
+    </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="numbers-list">
+    {% if content.numbers %}
+        {% for item in content.numbers %}
+        <div class="numbers-list__item" data-value="{{ item.number }}">
+            <input class="numbers-list__radio radio" type="radio" id="{{ item.number }}" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="{{ item.number }}">{{ item.number }}</label>
+            <p class="numbers-list__price" >{{ item.price }}</p>
+        </div>
+        {% endfor %}
+    {% endif %}
+</div>

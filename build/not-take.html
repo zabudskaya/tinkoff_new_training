@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="not-take">
+    <h1 class="not-take__title title">Не удалось дозвониться</h1>
+    <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>    <div class="not-take__buttons">
+        <button class="not-take__finish button button_color_yellow">Завершить задание</button>
+       <div class="not-take__next">
+           <input class="not-take__input checkbox" type="checkbox" name="next-task" id="next-task">
+           <label class="not-take__label" for="next-task">Взять следующее задание</label>
+       </div>
+    </div>
+    <a href="./search.html" class="button button_color_blue">Следующая страница ➞</a>
+</div>
+            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

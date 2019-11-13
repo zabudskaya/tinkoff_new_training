@@ -1,0 +1,79 @@
+.comment{
+    border: 1px solid var(--color__light-grey);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 25px;
+    position: relative;
+    &__header,
+    &__content-input{
+        margin-bottom: 20px;
+    }
+    &__header{
+        display: flex;
+        align-items: center;
+    }
+    &__title{
+        color: var(--color__dark-blue);
+        margin-right: 5px;
+    }
+    &__amount{
+        color: var(--color__silver);
+    }
+    &__arrow{
+        position: absolute;
+        right: 25px;
+    }
+    &__content{
+        position: relative;
+    }
+    &__content-input{
+        width: 100%;
+        background-color: var(--color__light-blue);
+        padding: 15px 15px;
+        border-radius: 5px;
+        color: var(--color__grey);
+        resize: none;
+    }
+    &__content-input:focus{
+        background-color: var(--color__white);
+        border: 1px solid var(--color__black);
+        color: var(--color__black);
+
+    }
+    &__content-symbols{
+        position: absolute;
+        bottom: 35px;
+        right: 15px;
+        color: var(--color__silver);
+    }
+
+    &__add-comment,
+    &__buttons{
+        width: 100%;
+    }
+
+    &__buttons{
+        display: flex;
+    }
+    &__buttons_hidden{
+        display: none;
+    }
+    &__cancel,
+    &__save{
+        width: calc(50% - 5px);
+    }
+    &__save{
+        margin-right: 0!important;
+        &_blocking{
+            pointer-events: none;
+        }
+    }
+    .save-comment{
+        margin-bottom: 15px;
+        &__date{
+            color: var(--color__silver);
+            margin-bottom: 5px;
+        }
+    }
+
+}

@@ -1,0 +1,59 @@
+<div class="call-back">
+    <h1 class="call-back__title title">Просит перезвонить</h1>
+    {% include '@elements/say/say.twig' %}
+    <p class="call-back__speech">
+        <span class="ring-up__client-name">ЮЛИЯ ВЛАДИМИРОВНА</span>, когда Вам удобно перезвонить?
+    </p>
+    <div class="call-back__specify">
+        <div class="date text-up input-error cross">
+            <input class="date__input input  datepicker" type="text" name="specify-date" id="datepicker">
+            <label class="date__label label" for="datepicker">Дата перезвона:</label>
+            {% include '@elements/icon-date/icon-date.twig' %}
+            <div class="cross__item hidden"></div>
+            <div class="input-error__text hidden">Поле заполненно не верно</div>
+        </div>
+        <div class="time text-up input-error">
+            <select class="time__select input" name="specify-time" id="specify-time">
+                <option value="" selected></option>
+                <option value="с 05:00 до 07:00">с 05:00 до 07:00</option>
+                <option value="с 07:00 до 09:00">с 07:00 до 09:00</option>
+                <option value="с 09:00 до 11:00">с 09:00 до 11:00</option>
+                <option value="с 11:00 до 13:00">с 11:00 до 13:00</option>
+                <option value="с 13:00 до 15:00">с 13:00 до 15:00</option>
+                <option value="с 15:00 до 17:00">с 15:00 до 17:00</option>
+                <option value="с 17:00 до 19:00">с 17:00 до 19:00</option>
+                <option value="с 19:00 до 21:00">с 19:00 до 21:00</option>
+                <option value="с 22:00 до 00:00">с 22:00 до 00:00</option>
+                <option value="с 00:00 до 02:00">с 00:00 до 02:00</option>
+                <option value="с 02:00 до 04:00">с 02:00 до 04:00</option>
+                <option value="с 04:00 до 06:00">с 04:00 до 06:00</option>
+            </select>
+            <label class="time__label label" for="specify-time">Время перезвона:</label>
+            <div class="input-error__text hidden">Поле заполненно не верно</div>
+            <div class="time__client-time">текущее время кликента — <span class="client-time">14:00</span></div>
+        </div>
+        {% include '@elements/specify-number/specify-number.twig'%}
+        <div class="call-back__phone call-back__new-number phone-number text-up input-error cross filled format hidden">
+            <input class="input phone" type="tel" id="new-number" name="new-number">
+            <label class="label" for="new-number">Выберите номер телефон:</label>
+            <div class="cross__item hidden"></div>
+            <div class="filled__item hidden">✔</div>
+            <div class="input-error__text hidden">Поле заполненно не верно</div>
+        </div>
+        <div class="call-back__phone call-back__third-person phone-number text-up input-error cross filled format hidden">
+            <input class="input phone" type="tel" id="third-person" name="third-person-number">
+            <label class="label" for="third-person">Выберите номер телефон:</label>
+            <div class="cross__item hidden"></div>
+            <div class="filled__item hidden">✔</div>
+            <div class="input-error__text hidden">Поле заполненно не верно</div>
+        </div>
+        <div class="call-back__third-person hidden">
+            {% include '@elements/full-name/full-name.twig' %}
+        </div>
+    </div>
+    <div class="call-back__footer">
+        <a class="button button_color_yellow">Назначить перезвон</a>
+        <a class="button button_color_blue">Перезвонить сейчас</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается. Не интересно</a>
+    </div>
+</div>

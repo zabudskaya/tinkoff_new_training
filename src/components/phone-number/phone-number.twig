@@ -1,0 +1,46 @@
+<div class="number">
+    <h1 class="title">Номер телефона</h1>
+    <div class="number__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech"><span class="client-name">Игорь Михайлович</span>, скажите, вы бы хотели перенести свой номер?</p>
+        <div class="number__phone-number">
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="number-transfer" name="phone-number">
+                <label class="radio-label" for="number-transfer">Перенести свой номер</label>
+            </div>
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="get-new" name="phone-number">
+                <label class="radio-label" for="get-new">Оформить новый</label>
+            </div>
+        </div>
+    </div>
+    <div class="number__item number__transfer hidden">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Вы бы хотели перенести номер по которому мы сейчас говорим(<span class="client-phone">+79393308140</span>)?</p>
+        <div class="number__what-number">
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="current-issue" name="number-what-number">
+                <label class="radio-label" for="current-issue">Да, на который звоним</label>
+            </div>
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="another-number" name="number-what-number">
+                <label class="radio-label" for="another-number">Нет, другой номер</label>
+            </div>
+        </div>
+    </div>
+    <div class="number__item number__other-number hidden">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Назовите номер телефона и он будет бесплатно перенесен в Тинькофф Мобайл</p>
+        {% include '@elements/number-transfer/number-transfer.twig' %}
+    </div>
+    <div class="number__item number__new-number hidden">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech"><span class="client-name">Игорь Михайлович</span>, назовите до 4 цифр вашего будущего номера</p>
+        {% include '../numbers/numbers.twig'%}
+    </div>
+    <div class="number__buttons hidden">
+        <a href="./page-name.html" class="button button_color_yellow">Зарегистрировать</a>
+        <a href="./call-back.html" class="button button_color_blue">Просит перезвонить</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается</a>
+    </div>
+</div>

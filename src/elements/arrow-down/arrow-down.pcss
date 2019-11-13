@@ -1,0 +1,34 @@
+.arrow-down {
+    content: '';
+    position: absolute;
+    &:after {
+        content: '';
+        position: absolute;
+    }
+    &_color{
+        &_blue{
+            right: 0;
+            bottom: -12px;
+            border: 8px solid transparent;
+            border-top: 8px solid var(--color__dark-blue);
+            &:after {
+                left: -8px;
+                bottom: -5px;
+                border: 8px solid transparent;
+                border-top: 8px solid var(--color__white);
+            }
+        }
+        &_grey{
+            right: 20px;
+            bottom: 15px;
+            border: 8px solid transparent;
+            border-top: 8px solid var(--color__silver);
+            &:after{
+                right: -8px;
+                bottom: -5px;
+                border: 8px solid transparent;
+                border-top: 8px solid var(--color__light-blue);
+            }
+        }
+    }
+}

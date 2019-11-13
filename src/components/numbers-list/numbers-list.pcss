@@ -1,0 +1,25 @@
+.numbers-list{
+    width: 100%;
+    &__item{
+        border-bottom: 1px solid var(--color__light-grey);
+        padding: 15px 20px;
+        display: flex;
+        align-items: center;
+        &_hidden{
+            display: none;
+        }
+    }
+    &__price{
+        width: 60%;
+    }
+    &__radio + label{
+        width: calc(40% - 35px);
+    }
+    .radio + label:before,
+    .radio:checked + label:before{
+        left: -30px !important;
+    }
+    .radio:checked + label:after{
+        left: -25px !important;
+    }
+}

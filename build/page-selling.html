@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+            <div class="header__steps">
+                            <a href="./ringup.html" id="./ringup.html" class="header__item">
+                        <p class="header__text">Дозвонились</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text header__text_active">Продажа</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Номер</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">ФИО</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Встреча</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Друзья</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Завершение</p>
+                        <div class="arrow-right"></div>
+                </a>
+                    </div>
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="selling">
+    <h1 class="selling__title title">Продажа</h1>
+    <div class="selling__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech"><span class="client-name">Игорь Михайлович</span>, скажите, в каком регионе вы проживаете?</p>
+        <div class="region text-up">
+    <input class="region__input input translate" type="text" id="region">
+    <label class="region__label label" for="region">Регион</label>
+    <img class="region__loupe" src="img/loupe.jpeg" alt="лупа">
+    <div class="cross"></div>
+</div>    </div>
+    <div class="selling__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech">Подскажите, ваш телефон поддерживает мобильный интернет 3g/4g формата?</p>
+        <div class="selling__internet-format">
+            <div class="radio-wrap selling__three-g">
+                <input class="radio" type="radio" id="three-g" name="selling-internet-format">
+                <label class="radio-label" for="three-g">Поддерживает 3g/4g</label>
+            </div>
+            <div class="radio-wrap selling__none-g">
+                <input class="radio" type="radio" id="none-g" name="selling-internet-format">
+                <label class="radio-label" for="none-g">Не поддерживает</label>
+            </div>
+        </div>
+    </div>
+    <div class="selling__block-have-g hidden">
+        <div class="selling__item">
+            <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>            <p class="speech">Скажите, сколько минут в месяц вам необходимо на развогоры?</p>
+            <div class="selling__call">
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-zero" name="selling-call">
+                    <label class="radio-label" for="call-zero">0 минут за 0 ₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-two-hundred" name="selling-call">
+                    <label class="radio-label" for="call-two-hundred">200 минут за 99₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-four-hundred" name="selling-call">
+                    <label class="radio-label" for="call-four-hundred">400 минут за 139₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-six-hundred" name="selling-call">
+                    <label class="radio-label" for="call-six-hundred">600 минут за 199₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-more-thousand" name="selling-call">
+                    <label class="radio-label" for="call-more-thousand">1200 минут за 359₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-unlimited" name="selling-call">
+                    <label class="radio-label" for="call-unlimited">Безлиминтные минуты за 999₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="selling__item">
+            <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>            <p class="speech"><span class="client-name">Игорь Михайлович</span>, какое количество мобильного интернета вам необходимо в месяц?</p>
+            <div class="selling__internet">
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-zero" name="selling-internet">
+                    <label class="radio-label" for="internet-zero">0 минут за 0 ₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-two" name="selling-internet">
+                    <label class="radio-label" for="internet-two">2 минут за 199₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-five" name="selling-internet">
+                    <label class="radio-label" for="internet-five">5 минут за 269₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-ten" name="selling-internet">
+                    <label class="radio-label" for="internet-ten">10 минут за 389₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-twenty" name="selling-internet">
+                    <label class="radio-label" for="internet-twenty">20 минут за 449₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-unlimited" name="selling-internet">
+                    <label class="radio-label" for="internet-unlimited">Безлиминтные минуты за 999₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="selling__item">
+            <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>            <p class="speech"><span class="client-name">Игорь Михайлович</span>, в наших тарифах можно подключить себе безлимитные сервисы, которые не расходуют основной интернет трафик.
+                Даже если пакет интернета на вашем тарифе закончится, вы все равно сможете пользоваться мессенджерами, смс, социальными сетями, слушать музыку и смотреть видео.
+                Какие сервисы вам подключить?</p>
+            <div class="service">
+                <div class="box-service ">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        Мессенджеры за 49₽<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>            </div>
+            <img class="box-service__img" src="img/messenger.jpeg" alt="">
+        </div>
+            <div class="box-service ">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        Музыка за 59₽<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>            </div>
+            <img class="box-service__img" src="img/music.jpeg" alt="">
+        </div>
+            <div class="box-service ">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        Социальные сети за 59₽<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>            </div>
+            <img class="box-service__img" src="img/social.jpeg" alt="">
+        </div>
+            <div class="box-service ">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        Видео за 159₽<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>            </div>
+            <img class="box-service__img" src="img/video.jpeg" alt="">
+        </div>
+            <div class="box-service  box-service__large ">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        Безлимитные СМС за 49₽<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                <label class="switch">
+    <input type="checkbox">
+    <span class="slider round"></span>
+</label>            </div>
+            <img class="box-service__img" src="" alt="">
+        </div>
+    
+</div>
+        </div>
+        <a href="./page-number.html" class="selling__button button button_color_yellow">Выбрать номер</a>
+    </div>
+    <div class="selling__block-none-g hidden">
+        <div class="selling__item">
+            <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>            <p class="speech"><span class="client-name">Игорь Михайлович</span>, к сожалению, наш оператор связи поддерживает только стандарты связи 3g и 4g.
+            Вы всегда сможете ещё раз оставить заявку на сайте Тинькофф Мобайл. Если у Вас ко мне нет больше вопросов, то я с Вами прощаюсь.
+            Всего доброго, до свидания.</p>
+        </div>
+        <div class="selling__buttons">
+            <a href="" class="button button_color_yellow">Завершить задание</a>
+            <div class="selling__next">
+                <input class="checkbox" type="checkbox" name="end" id="end">
+                <label class="" for="end">Взять следующее задание</label>
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

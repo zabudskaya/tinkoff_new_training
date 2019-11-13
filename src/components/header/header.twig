@@ -1,0 +1,12 @@
+<div class="header">
+    {% if content.steps %}
+        <div class="header__steps">
+            {% for item in content.steps %}
+                <a href="{{ item.link }}" id="{{ item.link }}" class="header__item">
+                        <p class="header__text{% if item.active %} header__text_active{% endif %}">{{ item.name }}</p>
+                        <div class="arrow-right"></div>
+                </a>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

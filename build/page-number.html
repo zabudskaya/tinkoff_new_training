@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+            <div class="header__steps">
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Дозвонились</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="./page-selling.html" id="./page-selling.html" class="header__item">
+                        <p class="header__text">Продажа</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text header__text_active">Номер</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">ФИО</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Встреча</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Друзья</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Завершение</p>
+                        <div class="arrow-right"></div>
+                </a>
+                    </div>
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="number">
+    <h1 class="title">Номер телефона</h1>
+    <div class="number__item">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech"><span class="client-name">Игорь Михайлович</span>, скажите, вы бы хотели перенести свой номер?</p>
+        <div class="number__phone-number">
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="number-transfer" name="phone-number">
+                <label class="radio-label" for="number-transfer">Перенести свой номер</label>
+            </div>
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="get-new" name="phone-number">
+                <label class="radio-label" for="get-new">Оформить новый</label>
+            </div>
+        </div>
+    </div>
+    <div class="number__item number__transfer hidden">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech">Вы бы хотели перенести номер по которому мs сейчас говорим(<span class="client-phone">+79393308140</span>)?</p>
+        <div class="number__what-number">
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="current-issue" name="number-what-number">
+                <label class="radio-label" for="current-issue">Да, на который звоним</label>
+            </div>
+            <div class="radio-wrap">
+                <input class="radio" type="radio" id="another-number" name="number-what-number">
+                <label class="radio-label" for="another-number">Нет, другой номер</label>
+            </div>
+        </div>
+    </div>
+    <div class="number__item number__other-number hidden">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech">Назовите номер телефона и он будет бесплатно перенесен в Тинькофф Мобайл</p>
+        <div class="transfer text-up">
+    <input class="transfer__input phone" type="tel" name="transfer" id="transfer">
+    <label class="transfer__label" for="transfer">Номер для переноса:</label>
+</div>    </div>
+    <div class="number__item number__new-number hidden">
+        <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>        <p class="speech"><span class="client-name">Игорь Михайлович</span>, назовите до 4 цифр вашего будущего номера</p>
+        <div class="numbers">
+    <div class="numbers-filter">
+    <div class="numbers-filter__number text-up">
+        <input class="numbers-filter__input" onkeydown="return event.keyCode !== 69" type="number" id="numbers-filter">
+        <label class="numbers-filter__label number-label" for="numbers-filter">Поиск по цифрам:</label>
+        <img class="numbers-filter__img" src="img/loupe.jpeg" alt="лупа">
+    </div>
+    <div class="numbers-filter__price text-up">
+        <select class="numbers-filter__select" id="price-filer">
+            <option value="" selected></option>
+            <option value="Бесплатно">Бесплатно</option>
+            <option value="490₽">490₽</option>
+            <option value="990₽">990₽</option>
+        </select>
+        <label class="numbers-filter__label price-label" for="price-filer">Стоимость:</label>
+        <div class="numbers-filter__arrow">
+            <div class="arrow-down arrow-down_color_grey"></div>
+        </div>
+    </div>
+</div>    <div class="numbers-list">
+                    <div class="numbers-list__item" data-value="+7(995)884-19-44">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)884-19-44" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)884-19-44">+7(995)884-19-44</label>
+            <p class="numbers-list__price" >Бесплатно</p>
+        </div>
+                <div class="numbers-list__item" data-value="+7(995)506-55-21">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)506-55-21" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)506-55-21">+7(995)506-55-21</label>
+            <p class="numbers-list__price" >Бесплатно</p>
+        </div>
+                <div class="numbers-list__item" data-value="+7(995)115-46-54">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)115-46-54" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)115-46-54">+7(995)115-46-54</label>
+            <p class="numbers-list__price" >490₽</p>
+        </div>
+                <div class="numbers-list__item" data-value="+7(995)121-01-25">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)121-01-25" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)121-01-25">+7(995)121-01-25</label>
+            <p class="numbers-list__price" >490₽</p>
+        </div>
+                <div class="numbers-list__item" data-value="+7(995)882-22-60">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)882-22-60" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)882-22-60">+7(995)882-22-60</label>
+            <p class="numbers-list__price" >990₽</p>
+        </div>
+                <div class="numbers-list__item" data-value="+7(995)899-89-00">
+            <input class="numbers-list__radio radio" type="radio" id="+7(995)899-89-00" name="numbers-list">
+            <label class="numbers-list__label radio-label" for="+7(995)899-89-00">+7(995)899-89-00</label>
+            <p class="numbers-list__price" >990₽</p>
+        </div>
+            </div></div>    </div>
+    <div class="number__buttons hidden">
+        <a href="./page-name.html" class="button button_color_yellow">Зарегистрировать</a>
+        <a href="./call-back.html" class="button button_color_blue">Просит перезвонить</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается</a>
+    </div>
+</div>            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

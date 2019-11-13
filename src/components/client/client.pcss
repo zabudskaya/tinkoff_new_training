@@ -1,0 +1,42 @@
+.client {
+  &__content {
+    border: 1px solid var(--color__light-grey);
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 25px;
+  }
+  &__title,
+  &__name {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__title {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color__silver);
+  }
+  &__name {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .actions {
+    box-shadow: 0 0 15px var(--color__light-grey);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__item {
+      width: calc(100% / 3);
+      border-right: 1px solid var(--color__light-grey);
+    }
+    &__item:last-child {
+      border: none;
+    }
+    &__img {
+      margin-left: calc(100% / 2 - 30px / 2);
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<div class="not-take">
+    <h1 class="not-take__title title">Не удалось дозвониться</h1>
+    {% include '@elements/say/say.twig' %}
+    <div class="not-take__buttons">
+        <button class="not-take__finish button button_color_yellow">Завершить задание</button>
+       <div class="not-take__next">
+           <input class="not-take__input checkbox" type="checkbox" name="next-task" id="next-task">
+           <label class="not-take__label" for="next-task">Взять следующее задание</label>
+       </div>
+    </div>
+    <a href="./search.html" class="button button_color_blue">Следующая страница ➞</a>
+</div>

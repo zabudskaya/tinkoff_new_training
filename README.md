@@ -1,1 +1,1 @@
-# tinkoff_training
+https://zalenaa.github.io/tinkoff_training/build/index.html

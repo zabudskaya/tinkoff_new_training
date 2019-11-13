@@ -1,0 +1,14 @@
+<div class="home hidden">
+    {% include '@elements/input-address/input-address.twig' %}
+    <div class="card"></div>
+    <div class="home__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">По вашим адресам нет доставки представителем, мы можем запланировать встречу на <span class="speech-date">09 сентября с 12:00 до 14:00</span>, по адресу:</p>
+        {% include '@elements/input-address/input-address.twig' %}
+    </div>
+    <div class="home__buttons">
+        <a href="./page-meet-confirmation.html" class="button button_color_yellow">Назначить втсречу</a>
+        <a href="./" class="button button_color_blue">Удобно в другое время</a>
+        <a href="./call-back.html" class="button button_color_blue">Сейчас не может дать ответ</a>
+    </div>
+</div>

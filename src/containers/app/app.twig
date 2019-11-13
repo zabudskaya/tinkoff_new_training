@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title }}</title>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<ваш API-ключ>&lang=ru_RU" type="text/javascript"></script>
+    <base href="./">
+</head>
+<body>
+    {% if not light %}
+        {% include '@components/header/header.twig' %}
+        <div class="app__wrapper">
+            <div class="app__content">
+                {% block content %}{% endblock %}
+            </div>
+            <div class="app__sidebar">
+                {% include '@components/client/client.twig' %}
+            </div>
+        </div>
+    {% else %}
+        {% block content %}{% endblock %}
+    {% endif %}
+    <div class="modal">
+        <div class="modal-inner">
+            <span data-modal-close>&times;</span>
+            <div class="modal-content"></div>
+        </div>
+    </div>
+</body>
+</html>

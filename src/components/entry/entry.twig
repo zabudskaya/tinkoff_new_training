@@ -1,0 +1,10 @@
+<div class="entry">
+    <div class="entry__name">{{ content.name }}</div>
+    <div class="entry__select">
+        <select class="entry__options">
+            {% for item in content.list %}
+                <option value="{{ item.link }}">{{ item.name }}</option>
+            {% endfor %}
+        </select>
+    </div>
+</div>

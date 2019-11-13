@@ -1,0 +1,14 @@
+.date{
+    width: calc(50% - 15px);
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 20px 0;
+    &__input:focus{
+        background-color: var(--color__white);
+        border: 1px solid var(--color__black);
+        border-radius: 5px;
+    }
+    &__input:focus + &__label{
+        color: var(--color__black);
+    }
+}

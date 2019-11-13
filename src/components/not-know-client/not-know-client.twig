@@ -1,0 +1,21 @@
+<div class="not-know-client">
+    <h1 class="title">Ответил кто-то другой, не знает клиента</h1>
+    <div class="not-know-client__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Скажите, как я могу к вам обращаться?</p>
+    </div>
+    <div class="not-know-client__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech"><span class="client-name">Глеб Александрович</span>, хочу предложить вам услуги нашего мобильного оператора.</p>
+        <p class="speech">Наши тарифы имеют пакетную систему тарификации и вы можете выбрать себе необходимое количество минут и мобильного интерента.
+        С нашим мобильным оператором вы можете звонить в любой регион страны, абонентам любых операторов как из домашнего региона, так и в поездках по России &mdash; все включено в пакет услуг.</p>
+
+        <p class="speech">Давайте сейчас я подберу вам тарифный план, и если вам все понравится, мы заполним заявку?</p>
+    </div>
+    <div class="not-know-client__buttons">
+        <a href="./page-selling.html" class="button button_color_yellow">Готов заполнить заявку</a>
+        <a href="./call-back.html" class="button button_color_blue">Просит перезвонить</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается. Не интересно</a>
+        <a href="./page-not-leave-request.html" class="button button_color_blue">Не оставлял заявку</a>
+    </div>
+</div>

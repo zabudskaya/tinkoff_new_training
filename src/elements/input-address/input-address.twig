@@ -1,0 +1,14 @@
+<div class="address">
+    <p class="address__title">Адрес:</p>
+    <div class="address__content text-up input-error cross filled format">
+        <input class="address__input input translate" type="text" id="address" name="address">
+        <label class="label" for="address">Начните вводить адрес</label>
+        <div class="address__placemark">
+            <img class="address__img" src="img/drop.jpeg" alt="">
+        </div>
+        <div class="cross__item hidden"></div>
+        <div class="filled__item hidden">✔</div>
+        <div class="input-error__text hidden">Поле заполненно не верно</div>
+    </div>
+    {% include '@elements/map/map.twig'%}
+</div>

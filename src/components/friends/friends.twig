@@ -1,0 +1,20 @@
+<div class="friends">
+    <h1 class="title">Приведи друга</h1>
+    <div class="friends__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Назовите, пожалуйста, имя и телефон Вашего друга</p>
+        {% include '@elements/full-name/full-name.twig' %}
+        <div class="phone-number text-up input-error cross filled format">
+            <input class="input phone" type="tel" id="number" name="number">
+            <label class="label" for="number">Телефон:</label>
+            <div class="cross__item hidden"></div>
+            <div class="filled__item hidden">✔</div>
+            <div class="input-error__text hidden">Поле заполненно не верно</div>
+        </div>
+        {% include '@elements/add-friend/add-friend.twig' %}
+    </div>
+    <div class="friends__buttons">
+        <a href="./page-end.html" class="button button_color_yellow">Завершить сбор друзей</a>
+        <a href="./page-end.html" class="button button_color_blue">Отказался назвать друзей</a>
+    </div>
+</div>

@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru" class="app">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <base href="./">
+<link href="assets/main.css" rel="stylesheet"></head>
+<body>
+            <div class="header">
+            <div class="header__steps">
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text header__text_active">Дозвонились</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Продажа</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Номер</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">ФИО</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Встреча</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Друзья</p>
+                        <div class="arrow-right"></div>
+                </a>
+                            <a href="/das" id="/das" class="header__item">
+                        <p class="header__text">Завершение</p>
+                        <div class="arrow-right"></div>
+                </a>
+                    </div>
+    </div>        <div class="app__wrapper">
+            <div class="app__content">
+                    <div class="ring-up">
+    <h1 class="ring-up__title title">Дозвонились клиенту</h1>
+    <div class="say">
+    <img src="img/microphone2.jpeg" alt="" class="say__img">
+    <p class="say__text">скажите</p>
+</div>    <p class="ring-up__speech speech">
+        Здравствуйте, меня зовут Екатерина, я представляю Тинькофф Мобайл.
+        <span class="client-name">Юлия Владимировна</span>, в благодарность за то, что являетесь клиентом
+        Тинькофф Банка, предлагаем Вам получит нашу сим-карту.
+    </p>
+    <div class="ring-up__buttons">
+        <a href="./page-selling.html" class="button button_color_yellow">Готов заполнить заявку</a>
+        <a href="./call-back.html" class="button button_color_blue">Сразу просит перезвонить</a>
+        <a href="./page-not-leave-request.html" class="button button_color_blue">Не оставлял заявку</a>
+        <a class="button button_color_blue">Тишина или автоответчик</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается. Не интересно</a>
+    </div>
+    <div class="ring-up__footer">
+        <p class="ring-up__footer-title">ответил не клиент?</p>
+        <p class="ring-up__question">А вы знаете <span class="ring-up__client-name ring-up__question-client-name">ЮЛИЯ ВЛАДИМИРОВНА</span>?</p>
+        <div class="ring-up__footer-buttons">
+            <a href="./page-know-client.html" class="ring-up__knows button button_color_blue">Знает клиента</a>
+            <a href="./page-not-know-client.html" class="ring-up__not-knows button button_color_blue">Не знает клиента</a>
+        </div>
+    </div>
+</div>            </div>
+            <div class="app__sidebar">
+                <div class="client">
+    <div class="client__content">
+        <p class="client__title">клиент</p>
+        <p class="client__name">Иванова Анна Сергеевна</p>
+        <div class="client__actions actions">
+            <div class="actions__item">
+                <img src="img/red_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/orange_phone.jpeg" alt="телефон" class="actions__img">
+            </div>
+            <div class="actions__item">
+                <img src="img/microphone.jpeg" alt="микрофон" class="actions__img">
+            </div>
+        </div>
+    </div>
+    <div class="comment">
+    <div class="comment__header">
+        <div class="comment__title">Комментарии</div>
+        <div class="comment__amount">0</div>
+        <div class="comment__arrow">
+            <div class="arrow-down arrow-down_color_blue hidden"></div>
+            <div class="arrow-up arrow-up_color_blue hidden"></div>
+        </div>
+    </div>
+    <div class="comment__items"></div>
+    <div class="comment__content hidden">
+        <textarea class="comment__content-input translate" name="comment"  rows="14" maxlength="100" placeholder="Введите комметарий"></textarea>
+        <div class="comment__content-symbols"><span class="comment__symbols">0</span>/100</div>
+    </div>
+    <div class="comment__footer">
+        <button class="comment__add-comment button button_color_blue">Добавить комментарий</button>
+        <div class="comment__buttons comment__buttons_hidden">
+            <button class="comment__cancel button button_color_blue">Отмена</button>
+            <button class="comment__save button button_color_blue">Сохранить</button>
+        </div>
+    </div>
+
+
+
+</div>
+</div>            </div>
+        </div>
+    <script type="text/javascript" src="assets/index.js"></script></body>
+</html>

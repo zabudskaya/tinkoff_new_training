@@ -1,0 +1,17 @@
+{% if content.service %}
+    {% for item in content.service %}
+        <div class="box-service {% if item.large %} box-service__large {% endif %}">
+            <div class="box-service__top">
+                <div class="box-service__text-wrap">
+                    <p class="box-service__text">
+                        {{ item.name }}<span class="box-service__month">/месяц</span>
+                    </p>
+                    <div class="box-service__question">?</div>
+                </div>
+                {% include '@elements/switch/switch.twig' %}
+            </div>
+            <img class="box-service__img" src="{{ item.img }}" alt="">
+        </div>
+    {% endfor %}
+
+{% endif %}

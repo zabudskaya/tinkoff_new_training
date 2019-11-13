@@ -1,0 +1,107 @@
+<div class="selling">
+    <h1 class="selling__title title">Продажа</h1>
+    <div class="selling__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech"><span class="client-name">Игорь Михайлович</span>, скажите, в каком регионе вы проживаете?</p>
+        {% include '@elements/region/region.twig' %}
+    </div>
+    <div class="selling__item">
+        {% include '@elements/say/say.twig' %}
+        <p class="speech">Подскажите, ваш телефон поддерживает мобильный интернет 3g/4g формата?</p>
+        <div class="selling__internet-format">
+            <div class="radio-wrap selling__three-g">
+                <input class="radio" type="radio" id="three-g" name="selling-internet-format">
+                <label class="radio-label" for="three-g">Поддерживает 3g/4g</label>
+            </div>
+            <div class="radio-wrap selling__none-g">
+                <input class="radio" type="radio" id="none-g" name="selling-internet-format">
+                <label class="radio-label" for="none-g">Не поддерживает</label>
+            </div>
+        </div>
+    </div>
+    <div class="selling__block-have-g hidden">
+        <div class="selling__item">
+            {% include '@elements/say/say.twig' %}
+            <p class="speech">Скажите, сколько минут в месяц вам необходимо на развогоры?</p>
+            <div class="selling__call">
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-zero" name="selling-call">
+                    <label class="radio-label" for="call-zero">0 минут за 0 ₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-two-hundred" name="selling-call">
+                    <label class="radio-label" for="call-two-hundred">200 минут за 99₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-four-hundred" name="selling-call">
+                    <label class="radio-label" for="call-four-hundred">400 минут за 139₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-six-hundred" name="selling-call">
+                    <label class="radio-label" for="call-six-hundred">600 минут за 199₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-more-thousand" name="selling-call">
+                    <label class="radio-label" for="call-more-thousand">1200 минут за 359₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="call-unlimited" name="selling-call">
+                    <label class="radio-label" for="call-unlimited">Безлиминтные минуты за 999₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="selling__item">
+            {% include '@elements/say/say.twig' %}
+            <p class="speech"><span class="client-name">Игорь Михайлович</span>, какое количество мобильного интернета вам необходимо в месяц?</p>
+            <div class="selling__internet">
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-zero" name="selling-internet">
+                    <label class="radio-label" for="internet-zero">0 ГБ за 0 ₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-two" name="selling-internet">
+                    <label class="radio-label" for="internet-two">2 ГБ за 199₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-five" name="selling-internet">
+                    <label class="radio-label" for="internet-five">5 ГБ за 269₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-ten" name="selling-internet">
+                    <label class="radio-label" for="internet-ten">10 ГБ за 389₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-twenty" name="selling-internet">
+                    <label class="radio-label" for="internet-twenty">20 ГБ за 449₽</label>
+                </div>
+                <div class="radio-wrap">
+                    <input class="radio" type="radio" id="internet-unlimited" name="selling-internet">
+                    <label class="radio-label" for="internet-unlimited">Безлиминтные интернет за 999₽</label>
+                </div>
+            </div>
+        </div>
+        <div class="selling__item">
+            {% include '@elements/say/say.twig' %}
+            <p class="speech"><span class="client-name">Игорь Михайлович</span>, в наших тарифах можно подключить себе безлимитные сервисы, которые не расходуют основной интернет трафик.
+                Даже если пакет интернета на вашем тарифе закончится, вы все равно сможете пользоваться мессенджерами, смс, социальными сетями, слушать музыку и смотреть видео.
+                Какие сервисы вам подключить?</p>
+            {% include '../service/service.twig' %}
+        </div>
+        <a href="./page-number.html" class="selling__button button button_color_yellow">Выбрать номер</a>
+    </div>
+    <div class="selling__block-none-g hidden">
+        <div class="selling__item">
+            {% include '@elements/say/say.twig' %}
+            <p class="speech"><span class="client-name">Игорь Михайлович</span>, к сожалению, наш оператор связи поддерживает только стандарты связи 3g и 4g.
+            Вы всегда сможете ещё раз оставить заявку на сайте Тинькофф Мобайл. Если у Вас ко мне нет больше вопросов, то я с Вами прощаюсь.
+            Всего доброго, до свидания.</p>
+        </div>
+        <div class="selling__buttons">
+            <a href="" class="button button_color_yellow">Завершить задание</a>
+            <div class="selling__next">
+                <input class="checkbox" type="checkbox" name="end" id="end">
+                <label class="" for="end">Взять следующее задание</label>
+            </div>
+        </div>
+    </div>
+</div>

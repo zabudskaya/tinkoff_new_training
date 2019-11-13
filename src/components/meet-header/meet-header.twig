@@ -1,0 +1,9 @@
+<div class="meet-header">
+    {% if content.tabs %}
+        <div class="meet-header__meet">
+            {% for item in content.tabs %}
+                <button type="button" data-id="{{ item.id }}" class="meet-header__item{% if item.active %} header__text_active{% endif %}">{{ item.name }}</button>
+            {% endfor %}
+        </div>
+    {% endif %}
+</div>

@@ -1,0 +1,56 @@
+<div class="denial">
+    <h1 class="denial__title title">Клиент отказался</h1>
+    {% include '@elements/say/say.twig' %}
+    <p class="denial__speech speech">Позвольте поинтересоваться, по какой причине?</p>
+    <div class="denial__why">
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-accustomed">
+            <label class="radio-label" for="why-accustomed">Приавык к своему оператору</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-think">
+            <label class="radio-label" for="why-think">Нужно подумать</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-inexpensive">
+            <label class="radio-label" for="why-inexpensive">У клиента более дешевый тариф</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-bad-connection">
+            <label class="radio-label" for="why-bad-connection">Боится низкого качества связи</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-conditions">
+            <label class="radio-label" for="why-conditions">Не подходят условия</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-corporate">
+            <label class="radio-label" for="why-corporate">Корпоративная симка</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-family">
+            <label class="radio-label" for="why-family">Семейный тариф</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-negative">
+            <label class="radio-label" for="why-negative">Полный отказ. Негатив</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-not-call">
+            <label class="radio-label" for="why-not-call">Больше не звонить</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-brand-negative">
+            <label class="radio-label" for="why-brand-negative">Негатив к бренду</label>
+        </div>
+        <div class="radio-wrap">
+            <input class="radio" type="radio" name="why" id="why-other">
+            <label class="radio-label" for="why-other">Другое</label>
+        </div>
+    </div>
+    
+    <div class="denial__buttons">
+        <a href="./page-selling.html" class="denial__button button button_color_yellow">Вернуться к оформлению</a>
+        <a class="denial__button button button_color_blue">Отказывается от сим-карты</a>
+    </div>
+</div>

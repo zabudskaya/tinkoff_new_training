@@ -1,0 +1,21 @@
+.time{
+    width: calc(50% - 15px);
+    position: relative;
+    cursor: pointer;
+    margin: 0 15px 20px 0;
+    &__select:focus{
+        background-color: var(--color__white);
+        border: 1px solid var(--color__black);
+        border-radius: 5px;
+    }
+    &__select:focus + &__label{
+        color: var(--color__black);
+    }
+    &__client-time{
+        text-transform: uppercase;
+        font-size: 11px;
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+    }
+}

@@ -1,0 +1,24 @@
+<div class="ring-up">
+    <h1 class="ring-up__title title">Дозвонились клиенту</h1>
+    {% include '@elements/say/say.twig' %}
+    <p class="ring-up__speech speech">
+        Здравствуйте, меня зовут Екатерина, я представляю Тинькофф Мобайл.
+        <span class="client-name">Юлия Владимировна</span>, в благодарность за то, что являетесь клиентом
+        Тинькофф Банка, предлагаем Вам получит нашу сим-карту.
+    </p>
+    <div class="ring-up__buttons">
+        <a href="./page-selling.html" class="button button_color_yellow">Готов заполнить заявку</a>
+        <a href="./call-back.html" class="button button_color_blue">Сразу просит перезвонить</a>
+        <a href="./page-not-leave-request.html" class="button button_color_blue">Не оставлял заявку</a>
+        <a class="button button_color_blue">Тишина или автоответчик</a>
+        <a href="./page-denial.html" class="button button_color_blue">Отказывается. Не интересно</a>
+    </div>
+    <div class="ring-up__footer">
+        <p class="ring-up__footer-title">ответил не клиент?</p>
+        <p class="ring-up__question">А вы знаете <span class="ring-up__client-name ring-up__question-client-name">ЮЛИЯ ВЛАДИМИРОВНА</span>?</p>
+        <div class="ring-up__footer-buttons">
+            <a href="./page-know-client.html" class="ring-up__knows button button_color_blue">Знает клиента</a>
+            <a href="./page-not-know-client.html" class="ring-up__not-knows button button_color_blue">Не знает клиента</a>
+        </div>
+    </div>
+</div>
